@@ -1,7 +1,8 @@
-#include<iostream>
+// #include<iostream>
+#include<stdio.h>
 #include<assert.h>
 
-using namespace std;
+// using namespace std;
 
 char *strcpy(char *strDest, const char *strSrc)
 {
@@ -15,7 +16,12 @@ char *strcpy(char *strDest, const char *strSrc)
 
 int main()
 {
-  char dec[] = "good";
-  char src[] = "bad";
-  cout << strcpy(dec,src) << endl;
+  char dec[10] = "good";
+  char src[10] = "bad";
+
+  scanf("%s%s", dec, src);
+
+  // printf("%s, %s\n", dec, src);
+  printf("%s\n", strcpy(dec, src));
+  // cout << strcpy(dec,src) << endl;
 }
