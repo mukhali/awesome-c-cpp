@@ -1,10 +1,11 @@
 #include<iostream>
+#include<assert.h>
+
 using namespace std;
 
 char *strcpy(char *strDest, const char *strSrc)
 {
-  if ( strDest == NULL || strSrc == NULL)
-    return NULL;
+  assert((strDest != NULL) && (strSrc != NULL));
   if ( strDest == strSrc)
     return strDest;
   char *tempptr = strDest;
