@@ -6,7 +6,7 @@ set (awesome-c-c++_VERSION_MINOR 1)
 set(CMAKE_CXX_FLAG "-g -Wall")
 
 set(SOURCES
-	m_atoi_method.cpp
+	src/m_atoi_method.cpp
   )
 
 add_executable(awesome ${SOURCES})
